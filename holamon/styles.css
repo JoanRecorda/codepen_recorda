@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    min-block-size: 100%;
+    min-inline-size: 100%;
+    background: #000000;
+    color: black;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+div {
+    background: #b80000;
+    width: 50%;
+    height: auto;
+    margin: 10vw 1vw 0vw 1vw;
+}
+
+h1::before {
+    transform: scaleX(0);
+    transform-origin: bottom right;
+}
+
+h1:hover::before {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+h1::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    inset: 0 0 0 0;
+    background: hsl(0 100% 36%);
+    z-index: -1;
+    transition: transform .7s ease;
+}
+
+h5 {
+    color: #b80000;
+}
+
+@media (orientation: landscape) {
+    body {
+        grid-auto-flow: column;
+    }
+}
