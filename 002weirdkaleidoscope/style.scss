@@ -1,0 +1,66 @@
+$num: 22;
+$c: #c68aff, #ff9054, #c68aff;
+$r: 16em;
+$b: 22em;
+$n: 4;
+$t: 60s;
+
+body, div { display: grid }
+
+div, ::before, ::after { grid-area: 1/1 }
+
+body {
+  margin: 0;
+  height: 80vh;
+
+  &::before, &::after {
+    background: #fff;
+    content: ''
+  }
+
+  &::after {
+    place-self: center;
+    padding: $r;
+    background: linear-gradient(-45deg, $c);
+    mix-blend-mode: color
+  }
+}
+
+.load {
+  background: #fff;
+  filter: blur($num*1px) contrast(3*$num) blur(1px);
+  mix-blend-mode: darken;
+
+  &::before, &::after {
+    --i: 0;
+    --sgn-i: calc(0.5*var(--i) - 0.2);
+    --den: calc(5 + (#{$n} - 4)*var(--i));
+    place-self: center;
+    margin: $b;
+    padding: $r;
+    border-radius: 50%;
+    -webkit-mask:
+            radial-gradient(closest-side,
+                    transparent calc(100% - #{$b}),
+                    red calc(100% - #{$b} + 1px) calc(100% - 1px),
+                    transparent);
+    animation: r calc(#{$t}/var(--den)) cubic-bezier(0, .80, 1, .30) infinite;
+    content: ''
+  }
+
+  &::before, &::after {
+    background:
+            repeating-conic-gradient(
+                            from calc(.2turn/var(--den)*var(--i)),
+                            #000 0%/ calc(50%/var(--den)),
+                            transparent 10% calc(100%/var(--den)));
+  }
+
+  &::before { animation-timing-function: steps(10*$n, start) }
+
+  &::after { --i: 2 }
+}
+
+@keyframes r {
+  to { transform: rotate(calc(var(--sgn-i)*1turn/var(--den))) }
+}
