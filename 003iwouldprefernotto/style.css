@@ -1,0 +1,70 @@
+.gradient-text {
+    background-color: #120078;
+    background-image: linear-gradient(
+            130deg,
+            #120078 16.666%,
+            #120078 16.666%,
+            #9D0191 33.333%,
+            #9D0191 33.333%,
+            #FD3A69 50%,
+            #FD3A69 50%,
+            #FECD1A 66.666%,
+            #FECD1A 66.666%,
+            #EEEEEE 83.333%,
+            #EEEEEE 83.333%);
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.gradient-text:hover{
+    animation: rainbow-text-simple-animation 0.5s ease-in forwards;
+}
+
+@keyframes rainbow-text-simple-animation-rev {
+    0% {
+        background-size: 650%;
+    }
+    40% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 100%;
+    }
+}
+
+@keyframes rainbow-text-simple-animation {
+    0% {
+        background-size: 100%;
+    }
+    80% {
+        background-size: 650%;
+    }
+    100% {
+        background-size: 650%;
+    }
+}
+
+body {
+    background-color: #EDFFA9;
+}
+
+header {
+    margin-top: calc(30vh - 8em);
+}
+
+h1 {
+    font-family: "Nunito", sans-serif;
+    font-weight: normal;
+    font-size: 12em;
+    line-height: 0.8;
+    text-align: left;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    cursor: pointer;
+    width: 720px;
+}
+
+/* https://fossheim.io/writing/posts/css-text-gradient/ */

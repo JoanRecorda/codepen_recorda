@@ -12,8 +12,10 @@ This project contains the several Codepen works I've been launching at https://c
 ### 1. General Info
 #### 001holamon - https://codepen.io/joanrecorda/pen/xxdLqME
 #### 002weirdkaleidoscope - https://codepen.io/joanrecorda/pen/zYwEKQG
-#### 003 -
+#### 003iwouldprefernotto - https://codepen.io/joanrecorda/pen/bGWagrX
 #### 004 -
+#### 005 -
+#### 006 -
 
 
 ### 2. Technologies
