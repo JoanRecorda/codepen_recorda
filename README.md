@@ -25,6 +25,10 @@ This project contains the several Codepen works I've been launching at https://c
 
 #### Basically it's been using vanilla's html/css/scss/javascript
 
+003iwouldprefernotto - in this codepen has been used a @keyframes (at-rules CSS statements that instruct CSS how to behave) ("https://developer.mozilla.org/en-US/docs/Web/CSS/@keyframes")
+
+004chisiscandalizza - in this codepen has been used a text-shadow property ("https://www.w3schools.com/cssref/css3_pr_text-shadow.asp", "https://css-tricks.com/getting-deep-into-shadows/")
+
 005maskgradient - in this codepen has been used a linear-gradient function as a mask over the image of Palma de Mallorca ("https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()")
 
 
