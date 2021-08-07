@@ -25,7 +25,7 @@ This project contains the several Codepen works I've been launching at https://c
 
 #### Basically it's been using vanilla's html/css/scss/javascript
 
-
+005maskgradient - in this codepen has been used a linear-gradient function as a mask over the image of Palma de Mallorca ("https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient()")
 
 
 ### 3. Installation
