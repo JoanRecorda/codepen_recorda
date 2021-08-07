@@ -14,13 +14,18 @@ This project contains the several Codepen works I've been launching at https://c
 #### 002weirdkaleidoscope - https://codepen.io/joanrecorda/pen/zYwEKQG
 #### 003iwouldprefernotto - https://codepen.io/joanrecorda/pen/bGWagrX
 #### 004chisiscandalizza - https://codepen.io/joanrecorda/pen/QWvaeqp
-#### 005 -
-#### 006 -
+#### 005maskgradient - https://codepen.io/joanrecorda/pen/Exmdggz
+#### 007 -
+#### 008 -
+#### 009 -
+#### 010 -
 
 
 ### 2. Technologies
 
-#### Basically it's been using vanilla's html/css/javascript
+#### Basically it's been using vanilla's html/css/scss/javascript
+
+
 
 
 ### 3. Installation
